@@ -1,0 +1,15 @@
+{description, "Complete OTP Application structure."}.
+{variables, [
+    {name, "mylib", "Name of the OTP application"},
+    {desc, "An OTP application", "Short description of the app"}
+]}.
+{template, "app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "otp_app.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "app_rebar.config", "{{name}}/rebar.config"}.
+{template, "template_gitignore", "{{name}}/.gitignore"}.
+{template, "template_LICENSE", "{{name}}/LICENSE"}.
+{template, "README.md", "{{name}}/README.md"}.
+{template, "eunit.erl", "{{name}}/test/{{name}}_test.erl"}.
+{template, "Dockerfile", "{{name}}/Dockerfile"}.
+{template, "github-push.yml", "{{name}}/.github/workflows/push.yml"}.

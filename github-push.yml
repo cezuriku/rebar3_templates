@@ -1,0 +1,13 @@
+name: Test {{name}}
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      -
+        name: Build docker image
+        run: docker build . -t {{name}}-test
+      -
+        name: Run tests
+        run: docker run {{name}}-test
