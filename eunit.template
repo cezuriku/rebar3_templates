@@ -1,0 +1,6 @@
+{description, "EUnit Test"}.
+{variables, [
+    {name, "eunit", "Name of the eunit test, prepended to the standard _test suffix"}
+]}.
+{dir, "test"}.
+{template, "eunit.erl", "test/{{name}}_test.erl"}.
