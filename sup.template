@@ -1,0 +1,5 @@
+{description, "Skeleton for a supervisor"}.
+{variables, [
+    {name, "sup", "Name of the supervisor"}
+]}.
+{template, "sup.erl", "{{name}}.erl"}.
