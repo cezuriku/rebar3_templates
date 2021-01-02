@@ -1,0 +1,5 @@
+{description, "Skeleton for a gen_server"}.
+{variables, [
+    {name, "server", "Name of the gen_server"}
+]}.
+{template, "template_gen_server.erl", "{{name}}.erl"}.
